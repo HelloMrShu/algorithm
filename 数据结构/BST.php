@@ -1,3 +1,11 @@
+<?php
+
+/**
+ * BST：二叉搜索树
+ * 中序遍历：从小到大的序列
+ * 查找：O(log2n)
+*/
+
 typedef struct node {
     int data;
     struct node *left;
