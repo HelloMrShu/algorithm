@@ -1,5 +1,10 @@
 <?php
 
+/**
+* 堆排序算法
+* 构建：时间复杂度O(nlogn)
+* 场景：解决topK问题（即先构建大顶堆或小顶堆，然后将根与最后一个未swap的节点交换，并且对交换后的根进行堆化）
+*/
 function heapify(&$arr, $n, $i) {
     if ($i >= $n) return;
 
