@@ -29,15 +29,13 @@ function build_bst($tree, $val) {
     } else {
         $temp = $tree->root;
         while($temp) {
-            if ($val > $temp->data) {
-                //右侧
+            if ($val > $temp->data) {   //右侧
                 if ($temp->right) {
                     $temp = $temp->right;                
                 } else {
                     $temp->right = $n;                
                 }
-            } else {
-                //左侧
+            } else {    //左侧
                  if ($temp->left) {
                      $temp = $temp->left;                 
                  } else {
