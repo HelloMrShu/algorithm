@@ -31,3 +31,19 @@ function preOrder($root) {
     }
     return $result;
 }
+
+//先序递归遍历
+function recursivePreOrder($root) {
+    if (!$root) return [];
+    
+    $left = $right = [];
+    if ($root->left) {
+        $left = $this->recursivePreOrder($root->left);
+    }
+    
+    if ($root->right) {
+        $right = $this->recursivePreOrder($root->right);
+    }
+    
+    return array_merge([$root->val], $left, $right);
+}
