@@ -23,3 +23,18 @@ function inOrder($root) {
     }
     return $result;
 }
+
+//中序递归遍历
+function recursiveInOrder($root) {
+    if (!$root) return [];
+ 
+    $left = $right = [];
+    if ($root->left) {
+        $left = $this->recursiveInOrder($root->left);
+    }
+    if ($root->right) {
+        $right = $this->recursiveInOrder($root->right);
+    }
+    
+    return array_merge($left, [$root->val], $right);
+}
