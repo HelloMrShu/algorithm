@@ -1,5 +1,5 @@
 ## Descprition
-This repository is used to share algorithm and data structure and so on, which contains the following aspects.
+This repository is used to share algorithm and data structure and so on.
 
 ## Contents
 1. redis
